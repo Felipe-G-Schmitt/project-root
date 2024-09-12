@@ -1,0 +1,316 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  max-width: 100%;
+  
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+  
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: sans-serif; 
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+html, body {
+  height: 100%; /* Garante que o body ocupe toda a altura da página */
+}
+
+header {
+  background-color: rgb(59, 59, 59);
+}
+
+.grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Gera colunas flexíveis */
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 20px;
+}
+
+.produto-item {
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+.produto-item button {
+  background-color: rgb(118, 120, 255);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.produto-item button:hover {
+  transform: scale(1.2);
+}
+
+.img-fluid-caixa {
+  width: 100%; /* Garante que a imagem se ajuste à largura do contêiner */
+  height: auto;
+  border-radius: 10px;
+}
+
+
+.container {
+  padding: 20px;
+  flex: 1;
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.img-fluid-caixa {
+  width: 95px;
+  height: auto;
+  border-radius: 25px;
+  border: 2px solid rgb(200, 60, 119);
+}
+
+.text-center {
+  text-align: center;
+  color: black; 
+}
+
+.display-Logo {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px;
+}
+
+.display-Logo p{
+  margin-left: 55px;
+  font-size: 1.5em;
+  color: white;
+}
+
+h1 {
+  color: rgb(0, 0, 0); 
+}
+
+input,
+label {
+  display: block;
+  width: 100%;
+}
+
+input {
+  padding: 10px;  
+}
+
+label {
+  margin-top: 15px;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 150px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 10px; 
+}
+
+.logo {
+  max-width: 100px;
+  text-align: center;
+  padding: 10px;
+}
+
+.menu-header {
+  margin-left: auto; 
+}
+
+.menu {
+  display: flex;
+  padding: 10px;
+  margin: 0;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+
+.menu li {
+  font-weight: bold;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: transform 0.3s ease;
+}
+
+.menu li:hover {
+  transform: scale(1.5);
+}
+
+.menu li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgb(59, 59, 59);
+}
+
+.inicio{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+footer p {
+  background-color: rgb(59, 59, 59);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
